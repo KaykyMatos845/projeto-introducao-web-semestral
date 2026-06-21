@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  padding: 2rem 1rem;
+}
+
+.card-form {
+  width: 100%;
+  max-width: 520px;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+}
+
+.card-header-custom {
+  background: linear-gradient(135deg, #1a8a5a 0%, #1db67d 100%);
+  padding: 2rem 2rem 1.5rem;
+  color: #fff;
+}
+
+.card-header-custom .badge-esf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
+
+.card-header-custom h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.card-header-custom p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.card-body-custom {
+  padding: 1.75rem 2rem 2rem;
+}
+
+.question-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.question-label .badge-required {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #e53e3e;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+.question-label .badge-optional {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #718096;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+.star-legend {
+  font-size: 0.72rem;
+  color: #718096;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.star-group {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.star-group .star {
+  font-size: 2rem;
+  color: #cbd5e0;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.12s ease;
+  line-height: 1;
+}
+
+.star-group .star:hover,
+.star-group .star.active {
+  color: #f6c90e;
+}
+
+.star-group .star:hover {
+  transform: scale(1.15);
+}
+
+.form-control:focus {
+  border-color: #1a8a5a;
+  box-shadow: 0 0 0 0.2rem rgba(26, 138, 90, 0.20);
+}
+
+.form-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 1.4rem 0;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #1a8a5a 0%, #1db67d 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  padding: 0.75rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  transition: opacity 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-submit:hover {
+  opacity: 0.93;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(26, 138, 90, 0.35);
+  color: #fff;
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+.form-footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #a0aec0;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 480px) {
+  .card-body-custom {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+  .card-header-custom {
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+  .star-group .star {
+    font-size: 1.75rem;
+  }
+}
